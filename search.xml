@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>buuctf-misc（三）</title>
+      <link href="/2020/05/30/buumisc3/"/>
+      <url>/2020/05/30/buumisc3/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="1-Business-Planning-Group"><a href="#1-Business-Planning-Group" class="headerlink" title="1.Business Planning Group"></a>1.Business Planning Group</h1><p>题中给了一个图片，题目B P G，猜测bpg图片，用winhex打开在下面找到bpg图片<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/1.png" alt="图片"><br>在网上搜了一下，这种bpg图片可以用Honeyview打开<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/2.png" alt="图片"><br>bases64解密，出现flag<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/3.png" alt="图片">  </p><h1 id="2-BSidesSF2019-zippy"><a href="#2-BSidesSF2019-zippy" class="headerlink" title="2.[BSidesSF2019]zippy"></a>2.[BSidesSF2019]zippy</h1><p>放在kali中发现数据包中有zip<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/4.png" alt="图片"><br>导出来，发现有密码，将流量包放在wireshark下，追踪tcp流发现解压密码。<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/5.png" alt="图片"><br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/6.png" alt="图片"><br>打开解压好的txt文档，即出现flag  </p><h1 id="3-ACTF新生赛2020-明文攻击"><a href="#3-ACTF新生赛2020-明文攻击" class="headerlink" title="3.[ACTF新生赛2020]明文攻击"></a>3.[ACTF新生赛2020]明文攻击</h1><p>将图片放在winhex下，发现最下面有个压缩包，文件头缺失，补全并添加至新文件<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/7.png" alt="图片"><br>发现题给的压缩包里面有一个flag.txt，和刚解压出的txt大小相同，明文攻击<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/8.png" alt="图片"><br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/9.png" alt="图片"><br>点击确定保存为zip文件，解压出现flag</p><h1 id="4-我爱Linux"><a href="#4-我爱Linux" class="headerlink" title="4.我爱Linux"></a>4.我爱Linux</h1><p>打开是一张图片，放在winhex下，翻到后面的数据很奇怪，但是没见过，搜了一下发现是python序列化，导出FF D9 80 03后面的数据至新文件<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/10.png" alt="图片"><br>写个脚本读取这个文件</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import pickle</span><br><span class="line">with open(&#39;flag.pickle&#39;, &#39;rb&#39;) as f:</span><br><span class="line">    f&#x3D; pickle.load(f)</span><br><span class="line">data &#x3D; list()</span><br><span class="line">for i in range(len(f)):</span><br><span class="line">    tem &#x3D; [&#39; &#39;]*100</span><br><span class="line">    data.append(tem)</span><br><span class="line">for i, j in enumerate(f):</span><br><span class="line">    for m in j:</span><br><span class="line">        data[i][m[0]] &#x3D; m[1]</span><br><span class="line">for i in data:</span><br><span class="line">    print(&#39;&#39;.join(i))</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/11.png" alt="图片">  </p><h1 id="5-SCTF2019-电单车"><a href="#5-SCTF2019-电单车" class="headerlink" title="5.[SCTF2019]电单车"></a>5.[SCTF2019]电单车</h1><p>将wav文件放在audacity中查看波形图<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/12.png" alt="图片"><br>将其转为0和1，细的为0宽的为1，<code>0 0111010010101010011000100 011101001010101001100010</code><br>钥匙信号(PT224X) = 同步引导码(8bit) + 地址位(20bit) + 数据位(4bit) + 停止码(1bit)<br>地址位长度为20bit，后4位为数据位即<code>01110100101010100110</code>  </p><h1 id="6-WUSTCTF2020-spaceclub"><a href="#6-WUSTCTF2020-spaceclub" class="headerlink" title="6.[WUSTCTF2020]spaceclub"></a>6.[WUSTCTF2020]spaceclub</h1><p>打开txt文档发现是空白的，全选发现都是空格，长为1短为0<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/13.png" alt="图片"><br>将二进制转字符串：wctf2020{h3re_1s_y0ur_fl@g_s1x_s1x_s1x}</p><h1 id="7-GUET-CTF2019-soul-sipse"><a href="#7-GUET-CTF2019-soul-sipse" class="headerlink" title="7.[GUET-CTF2019]soul sipse"></a>7.[GUET-CTF2019]soul sipse</h1><p>放在audacity中，查看频谱图，采样率在22050以下，会出现一串文字：这两个数的和是多少？<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/14.png" alt="图片"><br>用steghide找出隐藏的文件，是个链接<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/15.png" alt="图片"><br>下载链接的图片，打不开，放在winhex下，发现文件头损坏，将其修复并打开，发现是Unicode编码，解码得到两个数字，相加即flag。<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/16.png" alt="图片">  </p><h1 id="8-voip"><a href="#8-voip" class="headerlink" title="8.voip"></a>8.voip</h1><p>谷歌一下，voip：互联网协议语音（VoIP），也称为IP电话，简称电话。<br>将其放在wireshark中，选择电话，voip呼叫。<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/17.png" alt="图片"><br>点击播放流并播放即有声音读出flag：seccon{9001IVR}<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/18.png" alt="图片">  </p><h1 id="9-WUSTCTF2020-alison-likes-jojo"><a href="#9-WUSTCTF2020-alison-likes-jojo" class="headerlink" title="9.[WUSTCTF2020]alison_likes_jojo"></a>9.[WUSTCTF2020]alison_likes_jojo</h1><p>将boki.jpg放入kali下，foremost分离出一个压缩包，打开发现加密了，暴力破解<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/19.png" alt="图片"><br>打开txt，里面是base64，解了几遍最后出现<code>killerqueen</code>放在kali下outguess解出<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/20.png" alt="图片"><br>打开生成的1.txt出现flag</p><h1 id="10-QCTF2018-X-man-A-face"><a href="#10-QCTF2018-X-man-A-face" class="headerlink" title="10.[QCTF2018]X-man-A face"></a>10.[QCTF2018]X-man-A face</h1><p>二维码用ps补齐<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc3/21.png" alt="图片"><br>扫码得到<code>KFBVIRT3KBZGK5DUPFPVG2LTORSXEX2XNBXV6QTVPFZV6TLFL5GG6YTTORSXE7I=</code><br>用base32解码出flag</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> buu </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> buu </tag>
+            
+            <tag> misc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>buuctf-misc（二）</title>
       <link href="/2020/05/19/buumisc2/"/>
       <url>/2020/05/19/buumisc2/</url>
