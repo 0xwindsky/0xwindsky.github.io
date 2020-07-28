@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>buuctf-misc���ģ�</title>
+      <link href="/2020/07/28/buumisc4/"/>
+      <url>/2020/07/28/buumisc4/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="1-CTF2019-otaku"><a href="#1-CTF2019-otaku" class="headerlink" title="1.[*CTF2019]otaku"></a>1.[*CTF2019]otaku</h1><p>ԭ��hint:The txt is GBK encoding.<br>α����09�ĳ�00����doc�ĵ�,��һ�λ����Ƶ�txt�У���GBK��ʽ����  </p><p>Hello everyone, I am Gilbert. Everyone thought that I was killed, but actually I survived. Now that I have no cash with me and I��m trapped in another country. I cant contact Violet now. She must be desperate to see me and I dont want her to cry for me. I need to pay 300 for the train, and 88 for the meal. Cash or battlenet point are both accepted. I dont play the Hearthstone, and I dont even know what is Rastakhans Rumble.<br>�򿪼��ܵ�ѹ������ע�ʹ�����ʾ<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/1.png" alt="ͼƬ"><br>������ʾ����winrar�����������汣��õ�txt�ĵ����������Ĺ������õ�����ΪMy_waifu����ͼƬ����StegSolve�У�lsb��д����flag<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/2.png" alt="ͼƬ">  </p><h1 id="2-SUCTF2018-followme"><a href="#2-SUCTF2018-followme" class="headerlink" title="2.[SUCTF2018]followme"></a>2.[SUCTF2018]followme</h1><p>����wireshark�У�����http,Ӧ������password����<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/3.png" alt="ͼƬ">  </p><h1 id="3-GUET-CTF2019-520�I�ʾ"><a href="#3-GUET-CTF2019-520�I�ʾ" class="headerlink" title="3.[GUET-CTF2019]520�İ�ʾ"></a>3.[GUET-CTF2019]520�İ�ʾ</h1><p>����һ��photo.dat�ļ����ļ���0x33��򣬵õ�һ��ͼƬ<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/4.png" alt="ͼƬ"><br>��վ��λ�����ֵ��ӿƼ���ѧ����У��������flag  </p><h1 id="4-ACTF������2020-����"><a href="#4-ACTF������2020-����" class="headerlink" title="4.[ACTF������2020]����"></a>4.[ACTF������2020]����</h1><p>����=Stegosaurus����stegosaurus��д��û���ļ������ļ���linux�²鿴��pyc�ļ�<br>(python3.6���ϵİ汾���߻ᱨ��)  </p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">python3 stegosaurus.py -x O_O.pyc</span><br></pre></td></tr></table></figure><p>�õ�flag��<code>flag{3teg0Sauru3_!1}</code></p><h1 id="5-XMAN2018��λ��-file"><a href="#5-XMAN2018��λ��-file" class="headerlink" title="5.[XMAN2018��λ��]file"></a>5.[XMAN2018��λ��]file</h1><p>������extundelete�ָ�����Ŀ¼���ļ�:<code>extundelete �Crestore-all</code>,�鿴��ָ����ļ�������flag��<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/5.png" alt="ͼƬ"><br>(��winhex�򿪣�����f l a gҲ�����ѵ�)<del>Ӧ�����Ԥ�ڰ�</del><br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/6.png" alt="ͼƬ">  </p><h1 id="6-����ʡ��2019-Findme"><a href="#6-����ʡ��2019-Findme" class="headerlink" title="6.[����ʡ��2019]Findme"></a>6.[����ʡ��2019]Findme</h1><p>����������<br>1.png��<br>�²��ǸߺͿ������⣬��������һ��crc���ƿ��ߵĽű����õ��µ�ͼƬ�����µ�ͼƬ��ʾ�������⣬��ͼƬ�÷���010editor�鿴<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/7.png" alt="ͼƬ"><br>ͼƬ�ĵڶ���͵�����ȱ��IDAT��ʶ����49444154д��union CTYPE type��Ӧ��λ��<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/8.png" alt="ͼƬ"><br>��1.png����stegsolve������blue plane 2����һ��Ϊ��ά��<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/9.png" alt="ͼƬ"><br>ɨ��õ���һ��������ZmxhZ3s0X3  </p><p>2.png:<br>����winhex����ͼƬ����7z��ʶ��<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/10.png" alt="ͼƬ"><br>����ճ�������ļ�����7zΪ��׺ȥ���棬�򲻿����ļ�������һ���ļ�ͷΪ377A0304������7z���ļ�ͷ������zip���ƣ�zip���ļ�ͷΪ504B0304�����ǽ�����377A0304��Ϊ504B0304�����������򿪵��ᱨ������WinRAR�Դ����޸�ѹ�������򿪷����ĵ���������N0thIng h3re��Ȼ����kali����<br><code>strings * | grep -v &#39;N0thIng h3re&#39;</code><br>����ӡ������N0thIng h3re������ַ���<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/11.png" alt="ͼƬ"><br>�õ��ڶ���������1RVcmVfc  </p><p>3.png:<br>�͵�һ��ͼƬһ����CRC error���򿪷���crc������λ�ģ��ֱ���33��52��6c��5a��33��30��3d��<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/12.png" alt="ͼƬ"><br>��������תascii��õ�������������3RlZ30=  </p><p>4.png,5.png:<br>����kaliֱ��<code>strings 4.png</code>,<code>strings 5.png</code>��<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/13.png" alt="ͼƬ"><br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/14.png" alt="ͼƬ"><br>�õ��������͵�����������cExlX1BsY=��Yzcllfc0lN��  </p><p>����������������һ��b64����õ�flag<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/15.png" alt="ͼƬ">  </p><h1 id="7-UTCTF2020-basic-forensics"><a href="#7-UTCTF2020-basic-forensics" class="headerlink" title="7.[UTCTF2020]basic-forensics"></a>7.[UTCTF2020]basic-forensics</h1><p>��kali����ֱ�������ַ���<br><code>strings attachment.jpeg | grep flag</code><br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/16.png" alt="ͼƬ"><br>����flag��</p><h1 id="8-UTCTF2020-zero"><a href="#8-UTCTF2020-zero" class="headerlink" title="8.[UTCTF2020]zero"></a>8.[UTCTF2020]zero</h1><p>���Ǻܶ�Ӣ�ģ���Ŀ��zero���²���������ַ���Unicode��д��<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/17.png" alt="ͼƬ"><br>���flag��</p><h1 id="9-UTCTF2020-sstv"><a href="#9-UTCTF2020-sstv" class="headerlink" title="9.[UTCTF2020]sstv"></a>9.[UTCTF2020]sstv</h1><p><code>apt-get install qsstv</code><br>(�Ƽ�)��QSSTV(kali)���������MMSSTVҲ���ԣ����Խ���Ƶת��ΪͼƬ���ǵ�Ҫ�޸�sound������<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/18.png" alt="ͼƬ"><br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/19.png" alt="ͼƬ">  </p><h1 id="10-ACTF������2020-music"><a href="#10-ACTF������2020-music" class="headerlink" title="10.[ACTF������2020]music"></a>10.[ACTF������2020]music</h1><p>����һ���ļ�vip.m4a,����010�з��ֱ�Ӧ����00��λ��ȴ�д���A1���֣����ǽ����A1���<br><img src="https://cdn.jsdelivr.net/gh/0xwindsky/img@1.0/buumisc4/20.png" alt="ͼƬ"><br>����ʱ�޸ĺ�׺ΪMP4,���ų���flag��</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> buu </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> buu </tag>
+            
+            <tag> misc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>buuctf-misc（三）</title>
       <link href="/2020/05/30/buumisc3/"/>
       <url>/2020/05/30/buumisc3/</url>
